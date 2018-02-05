@@ -19,7 +19,7 @@ main:
     move 	$t0, $v0	# n
 
     # check input
-    ble		$t0, 0, bf	# if $t0 <= 0 then exit
+    ble		$t0, 0, bf	# if $t0 <= 0 then bf
 
     # loop
     li		$t1, 0		# i = 0
