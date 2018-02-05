@@ -40,7 +40,7 @@ sum:
 out:
     # bool
     beq		$t2, $t0, bt	# if sum == n then bt
-    bne		$t2, $t0, bf	# if $t2 != $t0 then bf 
+    bne		$t2, $t0, bf	# if sum != n then bf 
 
 bt:
     li		$v0, 4		# $v0 = 4
