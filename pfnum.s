@@ -1,4 +1,4 @@
-# Perfect num
+# Perfect number
 
     .data
 Begin:      .asciiz "n = "
@@ -27,7 +27,7 @@ main:
 
 loop:
     addi	$t1, $t1, 1		# i += 1
-    beq		$t1, $t0, out	# if $t1 == $t0 then out
+    beq		$t1, $t0, out	# if i == n then out
     div		$t0, $t1		# n / i
     mfhi	$t3				# $t3 = $t0 mod $t1 
     beq		$t3, 0, sum		# if $t3 == 0 then sum
