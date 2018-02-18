@@ -44,13 +44,13 @@ out:
 
 bt:
     li		$v0, 4		# $v0 = 4
-    la		$a0, T		
+    la		$a0, T		# print T adress
     syscall
     j		exit		# jump to exit
     
 bf:
     li		$v0, 4		# $v0 = 4
-    la		$a0, F		
+    la		$a0, F		# print F adress
     syscall
     j		exit		# jump to exit
 
